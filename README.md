@@ -3,7 +3,7 @@ dot em up
 
 ### Install dotfiles
 
-    curl -Ls https://raw.githubusercontent.com/ckovey/dotfiles/master/cfg-install.sh | /bin/bash
+    curl -Ls https://raw.githubusercontent.com/ckovey/dotfiles/master/cfg-install.sh | /bin/bash && source ~/.bashrc
 
 
 ### Add ssh key

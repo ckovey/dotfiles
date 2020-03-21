@@ -152,4 +152,5 @@ fi
 
 # Composer
 export PATH="$PATH:./vendor/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 

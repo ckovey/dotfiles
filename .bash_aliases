@@ -32,3 +32,5 @@ alias mkdir='mkdir -pv'
 alias df='df -H'
 alias du='du -ch'
 
+alias sc='cd /mnt/c/Users/Chris/code/syndeca-console'
+alias sv='cd /mnt/c/Users/Chris/code/syndeca-viewer-web'

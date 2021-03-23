@@ -34,3 +34,7 @@ alias du='du -ch'
 
 alias sc='cd /mnt/c/Users/Chris/code/syndeca-console'
 alias sv='cd /mnt/c/Users/Chris/code/syndeca-viewer-web'
+
+alias php7.4='sudo update-alternatives --set php /usr/bin/php7.4'
+alias php8.0='sudo update-alternatives --set php /usr/bin/php8.0'
+

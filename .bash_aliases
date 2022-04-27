@@ -34,6 +34,8 @@ alias du='du -ch'
 
 alias sc='cd /mnt/c/Users/Chris/code/syndeca-console'
 alias sv='cd /mnt/c/Users/Chris/code/syndeca-viewer-web'
+alias si='cd /mnt/c/Users/Chris/code/syndeca-image-viewer'
+
 alias mailhog='~/go/bin/MailHog'
 
 alias php7.4='sudo update-alternatives --set php /usr/bin/php7.4'

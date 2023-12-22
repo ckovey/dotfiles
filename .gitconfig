@@ -26,4 +26,10 @@ added = green
 changed = yellow bold
 untracked = red bold
 [alias]
-	undo = reset --soft HEAD^
+  undo = reset --soft HEAD^
+
+  # show a list of local git branches sorted by the commit date
+  branches = "for-each-ref --sort=-committerdate refs/heads --format='%(authordate:short) %(color:yellow)%(objectname:short) %(color:green)%(refname:short)%(color:reset) (%(color:cyan)%(committerdate:relative)%(color:reset)) %(authorname)'"
+
+  # show a list of local and remote git branches sorted by the commit date
+  branches-remote = "for-each-ref --sort=-committerdate refs/heads refs/remotes --format='%(authordate:short) %(color:yellow)%(objectname:short) %(color:green)%(refname:short)%(color:reset) (%(color:cyan)%(committerdate:relative)%(color:reset)) %(authorname)'"

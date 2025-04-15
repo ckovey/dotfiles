@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -226,3 +226,6 @@ _artisan()
 }
 complete -F _artisan php
 
+
+# Added by `rbenv init` on Tue May 21 16:08:37 EDT 2024
+eval "$(~/.rbenv/bin/rbenv init - bash)"

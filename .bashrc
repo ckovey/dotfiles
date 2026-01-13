@@ -227,5 +227,24 @@ _artisan()
 complete -F _artisan php
 
 
-# Added by `rbenv init` on Tue May 21 16:08:37 EDT 2024
-eval "$(~/.rbenv/bin/rbenv init - bash)"
+# Created by `pipx` on 2026-01-02 17:52:39
+export PATH="$PATH:/home/chris/.local/bin"
+
+# ---- SSH Agent (WSL) ----
+export SSH_AUTH_SOCK="$HOME/.ssh/agent.sock"
+
+# Start an agent only if the socket is missing or stale
+if ! ssh-add -l >/dev/null 2>&1; then
+  # If a stale socket exists, remove it
+  if [ -S "$SSH_AUTH_SOCK" ]; then
+    rm -f "$SSH_AUTH_SOCK"
+  fi
+
+  # Start agent bound to the fixed socket
+  eval "$(ssh-agent -a "$SSH_AUTH_SOCK")" >/dev/null
+
+  # Load your key once per agent lifetime (adjust key path as needed)
+  # If the key has a passphrase, you'll be prompted once (per agent lifetime).
+  ssh-add "$HOME/.ssh/id_rsa" </dev/null
+fi
+# -------------------------

@@ -32,9 +32,9 @@ alias mkdir='mkdir -pv'
 alias df='df -H'
 alias du='du -ch'
 
-alias sc='cd /mnt/c/Users/Chris/code/syndeca-console'
-alias sv='cd /mnt/c/Users/Chris/code/syndeca-viewer-web'
-alias si='cd /mnt/c/Users/Chris/code/syndeca-shoppable-image'
+alias sc='cd /home/chris/code/syndeca-console'
+alias sv='cd /home/chris/code/syndeca-viewer-web'
+alias si='cd /home/chris/code/syndeca-shoppable-image'
 
 alias mailhog='~/go/bin/MailHog'
 

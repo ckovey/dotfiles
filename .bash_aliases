@@ -33,7 +33,7 @@ alias df='df -H'
 alias du='du -ch'
 
 alias sc='cd /home/chris/code/syndeca-console'
-alias sv='cd /home/chris/code/syndeca-viewer-web'
+alias sv='cd /home/chris/code/syndeca-viewer'
 alias si='cd /home/chris/code/syndeca-shoppable-image'
 
 alias mailhog='~/go/bin/MailHog'

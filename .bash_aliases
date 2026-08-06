@@ -35,9 +35,5 @@ alias du='du -ch'
 alias sc='cd /home/chris/code/syndeca-console'
 alias sv='cd /home/chris/code/syndeca-viewer'
 alias si='cd /home/chris/code/syndeca-shoppable-image'
-
-alias mailhog='~/go/bin/MailHog'
-
-alias php7.4='sudo update-alternatives --set php /usr/bin/php7.4'
-alias php8.0='sudo update-alternatives --set php /usr/bin/php8.0'
-
+alias sl='cd /home/chris/code/syndeca-looksy'
+alias codex-modern='nvm exec 24 codex'
